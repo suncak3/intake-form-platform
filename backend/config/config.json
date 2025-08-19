@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "form_app_user",
+    "password": "t23072006t",
+    "database": "form_app_db",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5433,
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
